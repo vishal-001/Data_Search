@@ -3,7 +3,7 @@
 #include<string>
 #include<conio.h>
 using namespace std;
-void Search(string s);
+void Search(string );
 
 
 
@@ -20,11 +20,11 @@ int main()
         Search(key);
         char exitf;
         char y='y';
-        cout<<"\nIf You Want Exit the Program press 1 : " ;
+        cout<<"\nIf You Want Exit the Program press y : " ;
         cin>>exitf;
         if (exitf==y)
         {
-            cout<<" \n Thank you \n";
+            cout<<"\nThank you \n";
             exit(1);
         }
         else
@@ -44,7 +44,7 @@ int main()
 
                 if (p->second == key)
                 {
-                  cout<<p->first <<endl;
+                  cout<<"\n"<<p->first <<endl;
                 }
 
                 p++;
